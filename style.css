@@ -145,6 +145,7 @@ button{
   top: 380px;
   position: absolute;
 }
+
 /*pied de page*/
 footer {
   text-align: center;
@@ -153,8 +154,9 @@ footer {
   padding: 50px;
   clear: both;
   margin-top: 60%;
+  position: relative;
+  top: 100px;
 }
-
 
 .footer-row {
   display: flex;

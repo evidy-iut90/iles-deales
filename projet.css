@@ -1,0 +1,72 @@
+/* Style de fond sombre pour tout le site */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  position: relative;
+  background-color: #000000;
+  color: #f0f0f0;
+  border-bottom: 1px solid white;
+  padding: 1px 0 1px 0;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  background-color: #000000;
+  color: #f0f0f0;
+  padding: 1px 0 1px 0;
+  text-align: center;
+}
+
+main {
+  margin: 0% 25% 0% 25%;
+  color: #00000F;
+}
+
+
+.container{border: 1px solid black}
+.container-flex{display: flex;}
+.item {border: 10px; padding: 10px;}
+.item-space-right {border: 10px; padding: 10px; margin-right: 50%;}
+.item-space-left {border: 10px; padding: 10px; padding-left: 10%;}
+.item-space-top {border: 10px; padding: 10px; padding-top: 10%;}
+.item-space-bottom {border: 10px; padding: 10px; padding-bottom: 10%;}
+
+.image-width{width: 200px}
+
+.justify-content-center{justify-content: center;}
+.justify-content-space-between{justify-content: space-between;}
+.justify-content-space-around{justify-content: space-around;}
+.justify-content-space-evenly{justify-content: space-evenly;}
+
+
+@media (min-width: 1025px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+    orientation: landscape;
+  }
+
+  .flex-row{flex-direction: row;}
+  .flex-column{flex-direction: column;}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+  }
+
+  .flex-row{flex-direction: row;}
+  .flex-column{flex-direction: column;}
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+    orientation: portrait;
+  }
+
+  .flex-row{flex-direction: column;}
+  .flex-column{flex-direction: row;}
+}

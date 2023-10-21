@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles_cart.css" rel="stylesheet">
+    <script src="nav.js"></script>
     <title>Panier</title>
 </head>
 <body>
@@ -11,14 +12,17 @@
         <div class="logo">
             <img class="logo" src="img/Logo.png" alt="logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Ecommerce</a></li>
-                <li><a href="#">Magasin</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="#news">Shop</a>
+            <a href="#contact">Stories</a>
+            <a href="#about">About</a>
+            <a href="cart.html" class="active">Cart</a>
+            <a href="#about">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="img/Icon.png" width="60px" height="auto" alt="icon">
+            </a>
+        </div>
     </div>
     <div class="main">
         <h1>Votre Panier</h1>

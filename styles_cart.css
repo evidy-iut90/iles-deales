@@ -6,6 +6,9 @@ body {
 
 .header {
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     top: 0px;
@@ -16,11 +19,77 @@ body {
 
 .logo {
     position: absolute;
-    top: 5px;
-    left: 10px;
-    width: 150px;
-    height: 80px;
+    width: 130px;
+    height: 70px;
+    top: 7.5px;
+    left: 20px;
     border-radius: 10%;
+}
+
+.topnav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #323131;
+    overflow: hidden;
+}
+  
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+  
+.topnav a:hover {
+    background-color: #323131;
+    color: rgb(139, 138, 138);
+}
+  
+.topnav a.active {
+    background-color: #323131;
+    color: rgb(136, 134, 134);
+    text-decoration: underline;
+}
+  
+.topnav .icon {
+    position: fixed;
+    display: none;
+    top: 5px;
+    right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        position: fixed;
+        float: right;
+        display: block;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: fixed;
+        top: 20px;
+        right: 90px;
+    }
+    .topnav.responsive a.icon {
+        position: fixed;
+        right: 10px;
+        top: 5px;
+    }
+    .topnav.responsive a {
+        position: relative;
+        display: block;
+        float: none;
+        text-align: center;
+    }
 }
 
 .main {
@@ -91,4 +160,3 @@ body {
     background-color: #323131;
     opacity: 95%;
 }
-  

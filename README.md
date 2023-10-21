@@ -4,4 +4,4 @@
 
 [Shop](https://evidy-iut90.github.io/iles-deales/projet.html)
 
-## GOOFY YOUR PHONE
+[Cart](https://evidy-iut90.github.io/iles-deales/cart.html)

@@ -4,4 +4,4 @@
 
 [Shop](https://evidy-iut90.github.io/iles-deales/projet.html)
 
-[Cart](https://evidy-iut90.github.io/iles-deales/Cart.html)
+[Cart](https://evidy-iut90.github.io/iles-deales/cart.html)

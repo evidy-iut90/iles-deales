@@ -1,3 +1,4 @@
+/*navbar*/
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
@@ -47,4 +48,17 @@
       display: block;
       text-align: left;
     }
+  }
+
+/*titre*/
+/*titre*/
+  h{
+    color: black;
+    font-size: 56px;
+    font-family: Public Sans;
+    font-weight: 600;
+    line-height: 62px;
+    word-wrap: break-word;
+    position: relative;
+    left: 600px;
   }

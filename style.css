@@ -1,98 +1,99 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    margin-left: 75px;
-    margin-right: 75px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 75px;
+  margin-right: 75px;
 }
 
 .header {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    top: 0px;
-    left: 0px;
-    background-color: #323131;
-    z-index: 3;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  background-color: #323131;
+  z-index: 3;
 }
 
 .logo {
-    position: absolute;
-    width: 130px;
-    height: 70px;
-    top: 7.5px;
-    left: 20px;
-    border-radius: 10%;
+  position: absolute;
+  width: 130px;
+  height: 70px;
+  top: 7.5px;
+  left: 20px;
+  border-radius: 10%;
 }
 
 .topnav {
-    position: absolute;
-    top: 40px;
-    right: 0;
-    background-color: #323131;
-    overflow: hidden;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #323131;
+  overflow: hidden;
 }
-  
+
 .topnav a {
-    color: white;
-    text-align: center;
-    padding: 17px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.5s ease;
+  color: white;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.5s ease;
 }
-  
+
 .topnav a:hover {
-    background-color: #323131;
-    color: rgb(139, 138, 138);
+  background-color: #323131;
+  color: rgb(139, 138, 138);
 }
-  
+
 .topnav a.active {
-    background-color: #323131;
-    color: rgb(136, 134, 134);
-    text-decoration: underline;
+  background-color: #323131;
+  color: rgb(136, 134, 134);
+  text-decoration: underline;
 }
-  
+
 .topnav .icon {
-    position: fixed;
-    display: none;
-    top: 5px;
-    right: 10px;
+  position: fixed;
+  display: none;
+  top: 5px;
+  right: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .topnav a {
-        display: none;
-    }
-    .topnav a.icon {
-        position: fixed;
-        float: right;
-        display: block;
-        right: 10px;
-    }
+  .topnav a {
+      display: none;
+  }
+  .topnav a.icon {
+      position: fixed;
+      float: right;
+      display: block;
+      right: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .topnav.responsive {
-        position: fixed;
-        top: 20px;
-        right: 90px;
-    }
-    .topnav.responsive a.icon {
-        position: fixed;
-        right: 10px;
-        top: 5px;
-    }
-    .topnav.responsive a {
-        position: relative;
-        display: block;
-        float: none;
-        text-align: center;
-    }
+  .topnav.responsive {
+      position: fixed;
+      top: 20px;
+      right: 90px;
+  }
+  .topnav.responsive a.icon {
+      position: fixed;
+      right: 10px;
+      top: 5px;
+  }
+  .topnav.responsive a {
+      position: relative;
+      display: block;
+      float: none;
+      text-align: center;
+  }
 }
 
 /*titre*/
+
 h{
   color: black;
   font-size: 56px;
@@ -102,6 +103,7 @@ h{
   word-wrap: break-word;
   position: relative;
   left: 750px;
+  top: 100px;
 }
 
 p{
@@ -113,6 +115,7 @@ p{
   word-wrap: break-word ;
   position: relative;
   left: 450px;
+  top: 100px;
 }
 
 button{
@@ -123,7 +126,7 @@ button{
   width: 194px; 
   height: 50px; 
   left: 800px; 
-  top: 200px; 
+  top: 300px; 
   position: absolute;
 }
 
@@ -131,18 +134,19 @@ img{
   width: 1114px; 
   height: 521px;
   left: 350px;
-  top: 290px;
+  top: 380px;
   position: absolute;
 }
 
-/*footer*/
+
+/*pied de page*/
 footer {
   text-align: center;
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 50px;
   clear: both;
-  margin-top: 50%;
+  margin-top: 60%;
 }
 
 .footer-row {
@@ -174,3 +178,4 @@ footer {
   font-weight: bold;
   margin-bottom: 10%;
 }
+

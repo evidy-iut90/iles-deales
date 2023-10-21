@@ -1,0 +1,94 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: #323131;
+    z-index: 3;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 150px;
+    height: 80px;
+    border-radius: 10%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 125px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.cart-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e4e3e3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-produit { 
+    width: 300px;
+    height: 240px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px #419af8;
+}  
+
+.text-item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.maps {
+    margin-top: 5px;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #323131;
+    opacity: 95%;
+}
+  

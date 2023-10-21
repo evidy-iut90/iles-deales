@@ -92,6 +92,15 @@ body {
   }
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 125px;
+  padding: 20px;
+  z-index: 2;
+}
+
 /*titre*/
 
 h{
@@ -117,7 +126,6 @@ p{
   left: 450px;
   top: 100px;
 }
-
 button{
   color: #0D0D0D;
   font-size: 16px;
@@ -130,15 +138,13 @@ button{
   position: absolute;
 }
 
-img{
+.photo{
   width: 1114px; 
   height: 521px;
   left: 350px;
   top: 380px;
   position: absolute;
 }
-
-
 /*pied de page*/
 footer {
   text-align: center;
@@ -148,6 +154,7 @@ footer {
   clear: both;
   margin-top: 60%;
 }
+
 
 .footer-row {
   display: flex;
@@ -160,7 +167,6 @@ footer {
   margin-left: 5%;
   margin-right: 5%;
 }
-
 
 .footer-element {
   color:#AAAAAA;
@@ -178,4 +184,3 @@ footer {
   font-weight: bold;
   margin-bottom: 10%;
 }
-

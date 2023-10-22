@@ -20,10 +20,10 @@
         </div>
         <div class="topnav" id="myTopnav">
             <a href="index.html">Accueil</a>
-            <a href="projet.html">Îles</a>
+            <a href="shop.html">Îles</a>
             <a href="#Details">Détails</a>
             <a href="cart.html" class="active">Panier</a>
-            <a href="#login">Login</a>
+            <a href="#login">Se connecter</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <img src="img/Icon.png" width="60px" height="auto" alt="icon">
             </a>
@@ -31,6 +31,7 @@
     </div>
     <div class="main">
         <h1>Votre Panier</h1>
+        <h4>Vous n'avez pas finis de choisir vos îles ? <a href="shop.html">Continuer le shopping</a></h4>
         <div class="cart-resume">
             <div class="cart">
                 <div class="cart-item">
@@ -39,11 +40,11 @@
                         <div class="text-item">
                             <h3>Hummingbird Cay, Exuma Cays, Bahamas</h3>
                             <p>Prix: 33 057 885€</p>
-                            <p>Quantité: 1</p>
+                            <p>Superficie: 95,9104 hectares</p>
                             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d45888.07569543272!2d-75.93962545032201!3d23.456741998661784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDI3JzI4LjkiTiA3NcKwNTYnMzEuMSJX!5e0!3m2!1sfr!2sfr!4v1697905504709!5m2!1sfr!2sfr" width="240px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <button>Supprimer</button>
+                    <button class="supprimer-button"><img src="img/poubelle.png" width="26px" height="auto" alt="Image poubelle"></button>
                 </div>
                 <div class="cart-item">
                     <div class="img-details">
@@ -51,19 +52,81 @@
                         <div class="text-item">
                             <h3>Ko Rang Yai, Thaïlande</h3>
                             <p>Prix: 129 236 060€</p>
-                            <p>Quantité: 1</p>
+                            <p>superficie: 44,5154 hectares</p>
                             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d12251.68788707089!2d98.44400359767944!3d7.953834398254461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNTcnMjAuMyJOIDk4wrAyNic0Ny41IkU!5e0!3m2!1sfr!2sfr!4v1697904981363!5m2!1sfr!2sfr" width="240px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <button>Supprimer</button>
+                    <button class="supprimer-button"><img src="img/poubelle.png" width="26px" height="auto" alt="Image poubelle"></button>
                 </div>
             </div>
-            <div class="cart-total">
-                Total: 162 293 945€
+            <div class="cart-summary">
+                <h2>Résumé de la commande: </h2>
+                <div class="coupon">
+                    <input type="text" placeholder="Entrer votre coupon-code ici" name="coupon" class="coupon-bar">
+                </div>
+                <div class="sous-total">
+                    <h4>Sous-total:</h4>
+                    <h4>162 293 945€</h4>
+                </div>
+                <div class="frais-agence">
+                    <h4>Frais d'agence:</h4>
+                    <h5 class="frais">Calculés à la prochaine étape</h5>
+                </div>
+                <hr width="100%">
+                <div class="total">
+                    <h4>Total:</h4>
+                    <h4>162 293 945€</h4>
+                </div>
+                <button class="caisse">Passer à la caisse</button>
             </div>
         </div>
+        <div class="order-information">
+            <h3>Informations d'achat</h3>
+            <hr class="prime-hr">
+            <div class="zone-texte">
+                <h4>Politique de remboursement</h4>
+                <p>Voici notre exemple de politique de remboursement, qui est tout ce que vous devez savoir sur nos remboursements.</p>
+            </div>
+            <hr class="info-hr">
+            <div class="zone-texte">
+                <h4>Options d'achats</h4>
+            </div>
+            <hr class="info-hr">
+            <div class="zone-texte">
+                <h4>Conditions d'utilisations</h4>
+            </div>
+            <hr class="info-hr">
         </div>
-            <div class="footer">
+        <div class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h2>Newsletter</h2>
+                    <form action="/action_page.php">
+                        <div class="container">
+                            <h2>Inscrivez-vous à notre NewsLetter</h2>
+                        </div>
+                        <div class="container-mail">
+                            <input class="input-newsletter" type="text" placeholder="Votre adresse E-mail" name="mail" required>
+                            <input class="button-newsletter" type="submit" value="S'inscrire">
+                        </div>
+                    </form>
+               </div>
+               <div class="footer-col">
+                    <a href="#" class="footer-title">Aide</a>
+                    <a href="#" class="footer-element">Centre d'aide</a>
+                    <a href="#" class="footer-element">status des commandes</a>
+                    <a href="#" class="footer-element">contactez-nous</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#" class="footer-title">A propos</a>
+                    <a href="#" class="footer-element">A propos de nous</a>
+                    <a href="#" class="footer-element">Responsabilité</a>
+                    <a href="#" class="footer-element">Technologie</a>
+                    <a href="#" class="footer-element">Découvrez notre histoire</a>
+                </div>
+            </div>
+            <p>&copy; Îles-déales</p>
         </div>
+    </div>
 </body>
 </html>

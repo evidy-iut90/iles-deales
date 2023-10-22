@@ -1,0 +1,97 @@
+/* Style de fond sombre pour tout le site */
+.body {
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid black;
+}
+
+.header {
+  position: relative;
+  background-color: #000000;
+  color: #f0f0f0;
+  border-bottom: 1px solid white;
+  padding: 1px 0 1px 0;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  background-color: #000000;
+  color: #f0f0f0;
+  padding: 1px 0 1px 0;
+  text-align: center;
+}
+
+main {
+  color: #00000F;
+}
+
+.container{border: 1px}
+.container-flex{display: flex;}
+.item {border: 1px; padding: 3px;}
+.button {border: 1px solid black; padding: 10px; margin: 1px;}
+.check {border: 1px; padding: 10px; margin: 1px;}
+
+@media (min-width: 1025px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+    orientation: landscape;
+  }
+
+  .main {
+    margin: 0% 20% 0% 20%;
+  }
+
+  .flex-row{flex-direction: row;}
+  .flex-column{flex-direction: column;}
+
+  .justify-content-center{justify-content: center;}
+  .justify-content-space-between{justify-content: space-between;}
+  .justify-content-space-around{justify-content: space-around;}
+  .justify-content-space-evenly{justify-content: space-evenly;}
+
+  .load {border: 1px solid black; padding-inline: 100px;}
+  .align-right {text-align: right;}
+  .image-width{width: 300px}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+    orientation: landscape;
+  }
+
+  .main{
+    margin: 0% 0% 0% 0%;
+  }
+
+  .flex-row{flex-direction: row;}
+  .flex-column{flex-direction: column;}
+
+  .justify-content-center{justify-content: center;}
+  .justify-content-space-between{justify-content: space-between;}
+  .justify-content-space-around{justify-content: space-around;}
+  .justify-content-space-evenly{justify-content: space-evenly;}
+
+  .load {border: 1px solid black; padding-inline: 100px;}
+  .align-right {text-align: right;}
+  .image-width{width: 200px}
+}
+
+@media (max-width: 768px) {
+  .body {
+    margin: 0% 0% 0% 0%;
+    orientation: portrait;
+  }
+
+  main {
+    margin: 0% 0% 0% 0%;
+  }
+
+  .flex-row{flex-direction: column;}
+  .flex-column{flex-direction: row;}
+
+  .load {border: 1px solid black; margin-inline: 40%;}
+  .center {justify-content: center;}
+  .align {text-align: center;}
+  .image-width {width: 200px}
+}

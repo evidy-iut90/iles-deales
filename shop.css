@@ -210,5 +210,5 @@ main {
   .load {border: 1px solid black; margin-inline: 40%;}
   .center {justify-content: center;}
   .align {text-align: center;}
-  .image-width {width: 200px}
+  .image-width {width: 50%}
 }

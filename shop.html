@@ -7,6 +7,7 @@
   <link href="img/Logo.png" rel="icon">
   <title>Îles-déales</title>
   <link href="shop.css" rel="stylesheet">
+  <script src="nav.js"></script>
 </head>
 
 <body class="body">
@@ -41,11 +42,11 @@
             <h2>Filters</h2>
             <h4>Categories</h4>
           </div>
-          <div class="container container-flex" style="flex-direction: column;">
+          <div class="container container-flex center" style="flex-direction: column;">
             <div class="container container-flex flex-row">
               <div class="item">
                 <select class="button-rect body">
-                  <option class="button-rect body" selected>Non sélectionné</option>
+                  <option class="button-rect body" disabled="disabled" selected="selected">Continent :</option>
                   <option class="button-rect body">Atlantique</option>
                   <option class="button-rect body">Pacifique</option>
                   <option class="button-rect body">Indien</option>
@@ -139,7 +140,8 @@
         <div class="container container-flex" style="flex-direction: column;">
           <div class="align align-right">
             <select id="sort" class="button-rect body">
-              <option class="button-rect body" value=""><label for="sort">Ranger par :</label></option>
+              <option class="button-rect body" value="sort" disabled="disabled" selected="selected">Ranger par :
+              </option>
               <option class="button-rect body">Populaires</option>
               <option class="button-rect body">Offres récentes</option>
               <option class="button-rect body">Offres plus vieilles</option>
@@ -194,9 +196,35 @@
   </main>
   <br>
   <br>
-  <footer>
-    <h1>FOOTER</h1>
-    <h1>Work In Progress</h1>
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h2>Newsletter</h2>
+        <form action="/action_page.php">
+          <div class="container">
+            <h2>Inscrivez-vous à notre NewsLetter</h2>
+          </div>
+          <div class="container-mail">
+            <input class="input-newsletter" type="text" placeholder="Votre adresse E-mail" name="mail" required>
+            <input class="button-newsletter" type="submit" value="S'inscrire">
+          </div>
+        </form>
+      </div>
+      <div class="footer-col">
+        <a href="#" class="footer-title">Aide</a>
+        <a href="#" class="footer-element">Centre d'aide</a>
+        <a href="#" class="footer-element">status des commandes</a>
+        <a href="#" class="footer-element">contactez-nous</a>
+      </div>
+      <div class="footer-col">
+        <a href="#" class="footer-title">A propos</a>
+        <a href="#" class="footer-element">A propos de nous</a>
+        <a href="#" class="footer-element">Responsabilité</a>
+        <a href="#" class="footer-element">Technologie</a>
+        <a href="#" class="footer-element">Découvrez notre histoire</a>
+      </div>
+    </div>
+    <p>&copy; Îles-déales 2023</p>
   </footer>
 </body>
 

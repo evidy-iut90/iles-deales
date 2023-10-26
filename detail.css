@@ -1,0 +1,480 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: #323131;
+    z-index: 3;
+}
+
+.logo-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 130px;
+    height: 70px;
+    border-radius: 10%;
+    margin-right: 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.search button {
+    height: 100%;
+    margin-left: 10px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6662ad;
+    cursor: pointer;
+}
+
+.img-loupe {
+    width: 20px;
+    height: 20px;
+}
+
+.topnav {
+    background-color: #323131;
+    overflow: hidden;
+}
+  
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+  
+.topnav a:hover {
+    background-color: #323131;
+    color: rgb(139, 138, 138);
+}
+  
+.topnav a.active {
+    background-color: #323131;
+    color: rgb(136, 134, 134);
+    text-decoration: underline;
+}
+  
+.topnav .icon {
+    position: fixed;
+    display: none;
+    top: 5px;
+    right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        position: fixed;
+        float: right;
+        display: block;
+        right: 10px;
+    }
+    .logo {
+        width: 85px;
+        height: 40px;
+        border-radius: 10%;
+        margin-right: 5px;
+    }
+    .search {
+        position: relative;
+        bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+    }
+    .search button {
+        margin-left: 0px;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: fixed;
+        top: 20px;
+        right: 90px;
+    }
+    .topnav.responsive a.icon {
+        position: fixed;
+        right: 10px;
+        top: 5px;
+    }
+    .topnav.responsive a {
+        position: relative;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 110px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.cart-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart {
+    width: 650px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e4e3e3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-produit { 
+    width: 300px;
+    height: 240px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px #419af8;
+}  
+
+.text-item {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    flex-wrap: wrap;
+}
+
+.maps {
+    margin-top: 5px;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.supprimer-button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #6662ad;
+    cursor: pointer;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    width: 35%;
+    height: 500px;
+}
+
+.coupon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.coupon input[type="text"] {
+    flex: 1;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 16px;
+    border: solid black 2px;
+}
+
+.sous-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.frais-agence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.frais {
+    color: rgb(136, 134, 134);
+    opacity: 0.8;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.caisse {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #323131;
+    border-radius: 2px;
+}
+
+.caisse:hover {
+    background-color: white;
+    color: #323131;
+    cursor: pointer;
+}
+
+.order-information  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    margin-left: 25px;
+    width: 45%;
+}
+
+.info-hr {
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.prime-hr {
+    width: 100%;
+    border-top: 3px solid black;
+}
+
+.zone-texte {
+    color: rgb(136, 134, 134);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    clear: both;
+}
+  
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  
+.footer-element {
+    color:#AAAAAA;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-decoration: none;
+}
+  
+.footer-element:hover {
+    color:#e4e3e3;
+    transition: all linear 0.2s;
+}
+  
+.footer-title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-newsletter {
+    width: 70%;
+    height: 50px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.button-newsletter {
+    width: 70%;
+    height: 30px;
+    color: white;
+    background-color: #323131;
+    border-radius: 10px;
+}
+
+.button-newsletter:hover {
+    background-color: rgb(32, 31, 31);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 110px;
+    }
+    .responsive-margin {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .main {
+        padding: 0px;
+        margin: 0px;
+    }
+    .cart {
+        width: 100%;
+    }
+    .cart-resume {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-produit {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .text-item {
+        align-self: first baseline;
+        margin-bottom: 20px;
+    }
+    .cart-summary {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .order-information {
+        width: 80%;
+        margin-left: 0px;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 0;
+    }
+    .footer-row {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-col {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+div.carousel-fade {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .carousel-item.img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 7px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .place-button {
+    position: relative;
+    top: 5px;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
+    background-color: black;
+  }

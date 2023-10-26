@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/Icon_page.png" rel="icon">
+    <link href="detail.css" rel="stylesheet">
+    <script src="nav.js"></script>
+    <title>Détails</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-search">
+            <div class="logo">
+                <img class="logo" src="img/Logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher" name="search">
+                <button type="submit"><img class="img-loupe" src="img/loupe.png" alt="Image Loupe"></button>
+            </div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Îles</a>
+            <a href="#Details" class="active">Détails</a>
+            <a href="cart.html">Panier</a>
+            <a href="#login">Se connecter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="img/Icon.png" width="60px" height="auto" alt="icon">
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+        <div class="col order-md-last mb-5">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Hummingbird_Cay.jpg" alt="Image">
+                <div class="d-none d-md-block place-button">
+                </div>                  
+              </div>
+              <div class="carousel-item">
+                <img src="img/Hummingbird_Cay.jpg" alt="Image">
+                <div class="d-none d-md-block place-button">
+                </div>                  
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Hummingbird_Cay.jpg" alt="Image">
+                <div class="d-none d-md-block place-button">
+                </div>                  
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>

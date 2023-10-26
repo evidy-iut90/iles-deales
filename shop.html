@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="img/Logo.png" rel="icon">
+  <link href="img/Icon_page.png" rel="icon">
   <title>Îles-déales</title>
   <link href="shop.css" rel="stylesheet">
+  <link href="nav.css" rel="stylesheet">
   <script src="nav.js"></script>
 </head>
 
-<body class="body">
+<body class="body police">
   <header class="header">
     <div class="logo-search">
       <div class="logo">
@@ -26,7 +27,7 @@
       <a href="shop.html" class="active">Îles</a>
       <a href="#Details">Détails</a>
       <a href="cart.html">Panier</a>
-      <a href="#login">Login</a>
+      <a href="log_in.html">Login</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <img src="img/Icon.png" width="60px" height="auto" alt="icon">
       </a>
@@ -45,13 +46,13 @@
           <div class="container container-flex center" style="flex-direction: column;">
             <div class="container container-flex flex-row">
               <div class="item">
-                <select class="button-rect body">
-                  <option class="button-rect body" disabled="disabled" selected="selected">Continent :</option>
-                  <option class="button-rect body">Atlantique</option>
-                  <option class="button-rect body">Pacifique</option>
-                  <option class="button-rect body">Indien</option>
-                  <option class="button-rect body">Arctique</option>
-                  <option class="button-rect body">Antartique</option>
+                <select class="button-rect body police">
+                  <option class="button-rect body police" disabled="disabled" selected="selected">Continent :</option>
+                  <option class="button-rect body police">Atlantique</option>
+                  <option class="button-rect body police">Pacifique</option>
+                  <option class="button-rect body police">Indien</option>
+                  <option class="button-rect body police">Arctique</option>
+                  <option class="button-rect body police">Antartique</option>
                 </select>
               </div>
             </div>
@@ -77,12 +78,6 @@
               <div class="item check">
                 <input type="radio" name="taille">
                 <label>Superficie croissant</label>
-              </div>
-            </div>
-            <div class="container container-flex flex-row">
-              <div class="item check">
-                <input type="checkbox" value="8">
-                <label>Service</label>
               </div>
             </div>
             <div class="container container-flex flex-row">
@@ -132,7 +127,7 @@
             </div>
           </div>
           <div class="container container-flex center check">
-            <button type="reset" class="button-rect">Effacer les préférences</button>
+            <tr><button type="reset" class="button-rect police">Effacer les préférences</button></tr>
           </div>
         </div>
       </form>
@@ -149,44 +144,46 @@
             </select>
             <p>Actuellement 12 produits</p>
           </div>
-          <div class="container2 container-flex flex-column align center">
+          <div class="container container-flex align center" style="flex-direction: column;">
             <div class="container container-flex flex-row">
-              <div class="item2">
+              <a href="detail.html"><div class="item">
                 <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
-                <h4>Hummingbird Cay</h4>
-                <p>2 000 000€</p>
-              </div>
-              <div class="item2">
+                <h4>Hummingbird Cay, Bahamas</h4>
+                <p>33 057 885 €</p>
+                <p>96 hectares</p>
+              </div></a>
+              <a href="detail.html"><div class="item">
+                <img class="image-width" src="img/KoRangYai.jpg" alt="Image">
+                <h4>Ko Rang Yai, Thaïlande</h4>
+                <p>130 409 562 €</p>
+                <p>45 hectares</p>
+              </div></a>
+              <a href="detail.html"><div class="item">
                 <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
-                <h4>Hummingbird Cay</h4>
-                <p>2 000 000€</p>
-              </div>
-              <div class="item2">
-                <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
-                <h4>Hummingbird Cay</h4>
-                <p>2 000 000€</p>
-              </div>
+                <h4>Poubelle</h4>
+                <p>2 000 000 000 000€</p>
+              </div></a>
             </div>
             <div class="container container-flex flex-row">
-              <div class="item2">
+              <a href="detail.html"><div class="item">
                 <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
                 <h4>Hummingbird Cay</h4>
                 <p>2 000 000€</p>
-              </div>
-              <div class="item2">
+              </div></a>
+              <a href="detail.html"><div class="item">
                 <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
                 <h4>Hummingbird Cay</h4>
                 <p>2 000 000€</p>
-              </div>
-              <div class="item2">
+              </div></a>
+              <a href="detail.html"><div class="item">
                 <img class="image-width" src="img/Hummingbird_Cay.jpg" alt="Image">
                 <h4>Hummingbird Cay</h4>
                 <p>2 000 000€</p>
-              </div>
+              </div></a>
             </div>
           </div>
           <div class="container container-flex flex-row justify-content-center">
-            <button class="load">
+            <button class="load police">
               <p>Charger plus de produits</p>
             </button>
           </div>
@@ -197,34 +194,48 @@
   <br>
   <br>
   <footer class="footer">
-    <div class="footer-row">
-      <div class="footer-col">
-        <h2>Newsletter</h2>
-        <form action="/action_page.php">
-          <div class="container">
-            <h2>Inscrivez-vous à notre NewsLetter</h2>
-          </div>
-          <div class="container-mail">
-            <input class="input-newsletter" type="text" placeholder="Votre adresse E-mail" name="mail" required>
-            <input class="button-newsletter" type="submit" value="S'inscrire">
-          </div>
-        </form>
-      </div>
-      <div class="footer-col">
-        <a href="#" class="footer-title">Aide</a>
-        <a href="#" class="footer-element">Centre d'aide</a>
-        <a href="#" class="footer-element">status des commandes</a>
-        <a href="#" class="footer-element">contactez-nous</a>
-      </div>
-      <div class="footer-col">
-        <a href="#" class="footer-title">A propos</a>
-        <a href="#" class="footer-element">A propos de nous</a>
-        <a href="#" class="footer-element">Responsabilité</a>
-        <a href="#" class="footer-element">Technologie</a>
-        <a href="#" class="footer-element">Découvrez notre histoire</a>
-      </div>
+    <div class="footer-devider">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="footer-newsletter title">Inscrivez-vous à notre newsletter</div>
+                <div class="footer-text">
+                    Soyez les premiers à découvrir nos nouvelles offres, nos nouveaux produits, et nos évenements
+                </div>
+                <form action="#">
+                    <fieldset>
+                        <input type="text" id="email" name="email" placeholder="Votre email">
+                        <a href="#" class="footer-email-submit">S'inscrire</a>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="footer-row">
+            <div class="footer-col">
+                <p class="footer-title title">Shop</p>
+                <a href="#" class="footer-element">Mixte</a>
+                <a href="#" class="footer-element">Femme</a>
+                <a href="#" class="footer-element">czacf</a>
+                <a href="#" class="footer-element">Enfant</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-title title">Aide</p>
+                <a href="#" class="footer-element">Centre d'aide</a>
+                <a href="#" class="footer-element">czc</a>
+                <a href="#" class="footer-element">Ticket</a>
+                <a href="#" class="footer-element">nkfc</a>
+            </div>
+            <div class="footer-col">
+                <p class="footer-title title">A propos</p>
+                <a href="#" class="footer-element">A propos de nous</a>
+                <a href="#" class="footer-element">Jfv</a>
+                <a href="#" class="footer-element">J'ff pas</a>
+                <a href="#" class="footer-element">D</a>
+            </div>
+        </div>
     </div>
-    <p>&copy; Îles-déales 2023</p>
+    <div class="footer-c">
+        <p>&copy; Îles-déales 2023</p>
+    </div>
   </footer>
 </body>
 

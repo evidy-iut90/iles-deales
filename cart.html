@@ -6,6 +6,7 @@
     <link href="img/Icon_page.png" rel="icon">
     <link href="styles_cart.css" rel="stylesheet">
     <script src="nav.js"></script>
+    <script src="deroule.js"></script>
     <title>Panier</title>
 </head>
 <body>
@@ -84,8 +85,10 @@
         <div class="order-information responsive-margin">
             <h3 class="responsive-margin">Informations d'achat</h3>
             <hr class="prime-hr responsive-margin">
-            <div class="zone-texte responsive-margin">
-                <h4>Politique de remboursement</h4>
+            <div class="text-header" onclick="toggle1Text()">
+                <h4>Politique de remboursement - <i>Cliquer ici pour en savoir plus</i></h4>
+            </div>
+            <div class="zone-texte1 responsive-margin">
                 <p>Chez Îles-déales, nous comprenons que l'achat d'une île est une décision importante et unique dans la vie de nos clients. Cependant, nous comprenons qu'il peut y avoir des circonstances exceptionnelles où nos clients peuvent avoir besoin d'un remboursement. Cette politique explique dans quelles situations un remboursement peut être envisagé.</p>
                 <p>Conditions de Remboursement :</p>
                 <ul>
@@ -100,13 +103,93 @@
                     <li>Fournir des preuves documentaires, telles que des rapports d'experts ou des documents juridiques, qui prouvent la demande de remboursement.</li>
                 </ul>
             </div>
+
             <hr class="info-hr responsive-margin">
-            <div class="zone-texte responsive-margin">
-                <h4>Options d'achats</h4>
+            <div class="text-header" onclick="toggle2Text()">
+                <h4>Options d'achats - <i>Cliquer ici pour en savoir plus</i></h4>
             </div>
+            <div class="zone-texte2 responsive-margin">
+                <p class="souligne">Option 1 : Forfait Île de Base</p>
+                <p>Description : Cette option comprend l'achat de l'île sélectionnée, y compris les terrains et les ressources naturelles présentes sur l'île.</p>
+                <p>Inclusions :</p>
+                <ul>
+                    <li>Transfert de propriété de l'île au nom de l'acheteur.</li>
+                      <li>Accès complet aux ressources naturelles présentes sur l'île (par exemple, plages, forêts, sources d'eau).</li>
+                    <li>Assistance juridique pour le processus de transfert de propriété.</li>
+                </ul>
+                <br>
+                <p class="souligne">Option 2 : Forfait Île de Luxe</p>
+                <p>Description : Cette option offre une expérience clé en main pour les acheteurs recherchant un niveau de luxe élevé sur leur île privée.</p>
+                <p>Inclusions :</p>
+                <ul>
+                    <li>Construction d'une résidence de luxe sur l'île selon les spécifications de l'acheteur.</li>
+                    <li>Aménagement paysager et décoration d'intérieur haut de gamme.</li>
+                    <li>Services de concierge exclusifs pour répondre à tous les besoins des résidents.</li>
+                    <li>Personnel de sécurité privé pour assurer la sécurité 24h/24.</li>
+                    <li>Accès à des installations de loisirs de luxe (par exemple, piscines, spas, terrains de sport).</li>
+                </ul>
+                <br>
+                <p class="souligne">Option 3 : Forfait Investissement</p>
+                <p>Description : Cette option est conçue pour les investisseurs cherchant à développer des projets sur l'île pour un retour sur investissement.</p>
+                <p>Inclusions :</p>
+                <ul>
+                    <li>Possibilité de diviser l'île en parcelles pour des développements immobiliers ou touristiques.</li>
+                    <li>Assistance dans l'obtention des permis de construction et des autorisations gouvernementales.</li>
+                    <li>Accès à des études de marché et à des conseils d'experts pour maximiser le potentiel de l'île.</li>
+                    <li>Possibilité de gérer et commercialiser les propriétés développées via le site de l'entreprise.</li>
+                </ul>
+                <br>
+                <p class="souligne">Option 4 : Forfait Éco-Respectueux</p>
+                <p>Description : Cette option est destinée aux clients soucieux de l'environnement et intéressés par le développement durable de leur île.</p>
+                <p>Inclusions :</p>
+                <ul>
+                    <li>Consultation avec des experts en conservation pour un développement écologique et respectueux de la biodiversité.</li>
+                    <li>Mise en place de pratiques durables pour l'utilisation des ressources naturelles.</li>
+                    <li>Participation à des programmes de préservation de la faune et de la flore locales.</li>
+                    <li>Certification écologique pour l'île, reconnaissant les efforts de préservation de l'environnement.</li>
+                </ul>
+            </div>
+
             <hr class="info-hr responsive-margin">
-            <div class="zone-texte responsive-margin">
-                <h4>Conditions d'utilisations</h4>
+            <div class="text-header" onclick="toggle3Text()">
+                <h4>Conditions d'utilisation - <i>Cliquer ici pour en savoir plus</i></h4>
+            </div>
+            <div class="zone-texte3 responsive-margin">
+                <p>Ce site est exploité par Îles-déales ("nous", "notre" ou "nos"). En accédant à ce site, vous acceptez d'être lié par ces Conditions d'Utilisation ("Conditions"). Si vous n'acceptez pas toutes les Conditions, veuillez ne pas utiliser ce site.</p>
+                <p>1. Utilisation du Site</p>
+                <ul>
+                    <p>1.1 Vous devez avoir au moins 18 ans pour utiliser ce site. En utilisant ce Site et en acceptant ces Conditions, vous garantissez que vous avez au moins 18 ans.</p>
+                    <p>1.2 Vous acceptez de ne pas utiliser ce site à des fins illégales ou interdites par ces Conditions.</p>
+                </ul>
+                <br>
+                <p>2. Confidentialité</p>  
+                <ul>
+                    <p>2.1 Notre Politique de Confidentialité explique la manière dont nous recueillons, utilisons et protégeons vos informations personnelles. En utilisant ce Site, vous consentez à ce que toutes les informations que vous nous fournissez soient traitées de la manière décrite dans notre Politique de Confidentialité.</p>
+                </ul>
+                <br>
+                <p>3. Propriété Intellectuelle</p>
+                <ul>
+                    <p>3.1 Le contenu de ce site, y compris mais sans s'y limiter, le texte, les graphiques, les logos, les images, les clips audio, les données, la mise en page, les designs, les brevets, les marques de commerce, et autres informations (collectivement, "Contenu"), est protégé par des droits d'auteur, des marques de commerce et d'autres lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, republier, distribuer, afficher, effectuer, transmettre ou exploiter de quelque manière que ce soit, en tout ou en partie, le Contenu sans notre autorisation écrite préalable.</p>
+                </ul>
+                <br>
+                <p>4. Achat d'Îles</p>
+                <ul>
+                    <p>4.1 Les informations sur ce site relatives aux îles à vendre sont sujettes à modification sans préavis. Nous nous réservons le droit de modifier les prix, les descriptions et les spécifications des îles sans obligation de notre part de mettre à jour ce site.</p>
+                    <p>4.2 Toutes les transactions d'achat d'îles sont régies par nos Conditions de Vente, qui font partie intégrante de ces Conditions d'Utilisation.</p>
+                </ul>
+                <br>
+                <p>5. Limitation de Responsabilité</p>
+                <ul>
+                    <p>5.1 Dans les limites permises par la loi, nous ne serons pas responsables des dommages directs, indirects, spéciaux, accessoires ou consécutifs découlant de l'utilisation de ce site ou de l'impossibilité de l'utiliser, même si nous avons été informés de la possibilité de tels dommages.</p>
+                </ul>
+                <br>
+                <p>6. Modifications des Conditions</p>
+                <ul>
+                    <p>6.1 Nous nous réservons le droit de modifier ces Conditions à tout moment. Les modifications prendront effet dès leur publication sur ce Site. Il est de votre responsabilité de consulter régulièrement ces Conditions afin de prendre connaissance de toute modification. En continuant à utiliser ce Site après la publication des modifications, vous acceptez les Conditions modifiées.</p>
+                </ul>
+                <br>
+                <p>En utilisant ce Site, vous acceptez ces Conditions dans leur intégralité. Si vous ne les acceptez pas, veuillez ne pas utiliser ce Site.
+                </p>
             </div>
             <hr class="info-hr responsive-margin">
         </div>

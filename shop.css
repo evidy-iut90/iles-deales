@@ -136,9 +136,11 @@ main {
   color: #00000F;
 }
 
-.container{border: 1px}
+.container{border: 1px;}
+.container2{flex-wrap: wrap;padding: 20px;}
 .container-flex{display: flex;}
 .item {border: 1px; padding: 3px;}
+.item2 {padding: 3px ;}
 .button-color {border: 1px solid black; padding: 10px; margin: 1px; border-radius: 20px;}
 .button-rect {border: 1px solid black; padding: 10px; margin: 1px;}
 .check {border: 1px; padding: 10px; margin: 1px;}

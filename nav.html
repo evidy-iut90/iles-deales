@@ -1,0 +1,208 @@
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: #323131;
+    z-index: 3;
+  }
+
+/*navbar*/
+.logo {
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    top: 7.5px;
+    left: 20px;
+    border-radius: 10%;
+  }
+  
+  .topnav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #323131;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    color: white;
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+  }
+  
+  .topnav a:hover {
+    background-color: #323131;
+    color: rgb(139, 138, 138);
+  }
+  
+  .topnav a.active {
+    background-color: #323131;
+    color: rgb(136, 134, 134);
+    text-decoration: underline;
+  }
+  
+  .topnav .icon {
+    position: fixed;
+    display: none;
+    top: 5px;
+    right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        position: fixed;
+        float: right;
+        display: block;
+        right: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: fixed;
+        top: 20px;
+        right: 90px;
+    }
+    .topnav.responsive a.icon {
+        position: fixed;
+        right: 10px;
+        top: 5px;
+    }
+    .topnav.responsive a {
+        position: relative;
+        display: block;
+        float: none;
+        text-align: center;
+    }
+  }
+  
+  /*footer*/
+.footer {
+    background-color: #333;
+    padding: 2%;
+    clear: both;
+    margin-top: 10%;
+}
+
+.footer-devider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Flex box qui contiennent respectivment la newsletter et les liens utiles
+Changent de ligne à colone pour le responsive */
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 45%;
+    padding: 2%;
+}
+
+/* Flex box contenant chacune une colone de lien utile */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+/* Style du titre de la newsletter */
+.footer-newsletter {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+/* Style du texte de la newsletter */
+.footer-text {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+/* Style des liens dans les liens utile */
+.footer-element {
+    color:#AAAAAA;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-decoration: none;
+}
+
+/* Flex box contenant l'email pour la newsletter */
+.footer-col fieldset {
+    align-items: center;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+    justify-content: center;
+    padding: 3%;
+}
+
+/* Style de l'input text de la newsletter */
+.footer-col input[type=text] {
+    width: 398px;
+    height: 40px;
+    flex-shrink: 0; ;
+    margin-bottom: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* Style du "bouton" S'inscrire */
+.footer-col .footer-email-submit {
+    width: 70%;
+    height: 30px;
+    color: white;
+    background-color: #323131;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.footer-col .footer-email-submit :hover {
+    background-color: rgb(32, 31, 31);
+  cursor: pointer;
+}
+
+.footer-col .footer-email-submit:hover {
+    text-decoration: underline;
+}
+
+.footer-element:hover {
+    color: #EEEEEE;
+    transition: all linear 0.2s;
+}
+
+/* Style des titres des colones de liens utiles */
+.footer-title {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.footer-c {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .footer-devider {
+        flex-direction: column;
+    }
+
+    .footer-row {
+        width: 95%;
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/Icon_page.png" rel="icon">
     <link href="styles_cart.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
     <script src="nav.js"></script>
     <script src="deroule.js"></script>
     <title>Panier</title>
@@ -27,7 +28,7 @@
             <a href="cart.html" class="active">Panier</a>
             <a href="#login">Se connecter</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="img/Icon.png" width="60px" height="auto" alt="icon">
+                <img src="img/Icon.png" alt="icon">
             </a>
         </div>
     </div>
@@ -194,28 +195,38 @@
             <hr class="info-hr responsive-margin">
         </div>
         <div class="footer">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h2>Newsletter</h2>
-                    <form action="/action_page.php">
-                        <div class="container">
-                            <h2>Inscrivez-vous à notre NewsLetter</h2>
-                        </div>
-                        <div class="container-mail">
-                            <input class="input-newsletter" type="text" placeholder="Votre adresse E-mail" name="mail" required>
-                            <input class="button-newsletter" type="submit" value="S'inscrire">
-                        </div>
-                    </form>
-               </div>
-               <div class="footer-text">
+            <div class="footer-devider">
+                <div class="footer-row">
                     <div class="footer-col">
-                        <a href="#" class="footer-title">Aide</a>
-                        <a href="#" class="footer-element">Centre d'aide</a>
-                        <a href="#" class="footer-element">status des commandes</a>
-                        <a href="#" class="footer-element">contactez-nous</a>
+                        <div class="footer-newsletter title">Inscrivez-vous à notre newsletter</div>
+                        <div class="footer-text">
+                            Soyez les premiers à découvrir nos nouvelles offres, nos nouveaux produits, et nos évenements
+                        </div>
+                        <form action="#">
+                            <fieldset>
+                                <input type="text" id="email" name="email" placeholder="Votre email">
+                                <a href="#" class="footer-email-submit">S'inscrire</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <p class="footer-title title">Shop</p>
+                        <a href="#" class="footer-element">Mixte</a>
+                        <a href="#" class="footer-element">Femme</a>
+                        <a href="#" class="footer-element">czacf</a>
+                        <a href="#" class="footer-element">Enfant</a>
                     </div>
                     <div class="footer-col">
-                        <a href="#" class="footer-title">A propos</a>
+                        <p class="footer-title title">Aide</p>
+                        <a href="#" class="footer-element">Centre d'aide</a>
+                        <a href="#" class="footer-element">Status de commande</a>
+                        <a href="#" class="footer-element">Livraison</a>
+                        <a href="#" class="footer-element">Conactez-nous</a>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title title">A propos</p>
                         <a href="#" class="footer-element">A propos de nous</a>
                         <a href="#" class="footer-element">Responsabilité</a>
                         <a href="#" class="footer-element">Technologie</a>
@@ -223,8 +234,9 @@
                     </div>
                 </div>
             </div>
-            <p>&copy; Îles-déales</p>
+            <div class="footer-c">
+                <p>&copy; Îles-déales</p>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>

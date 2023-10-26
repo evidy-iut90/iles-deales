@@ -314,8 +314,42 @@ body {
     border-top: 3px solid black;
 }
 
-.zone-texte {
+.zone-texte1 .zone-texte2 .zone-texte3 {
     color: rgb(136, 134, 134);
+}
+
+.zone-texte1 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.zone-texte2 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.zone-texte3 {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.zone-texte1.expanded {
+    height: auto;
+}
+
+.zone-texte2.expanded {
+    height: auto;
+}
+
+.zone-texte3.expanded {
+    height: auto;
+}
+
+.souligne {
+    text-decoration: underline;
 }
 
 .footer {

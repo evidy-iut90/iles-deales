@@ -1,46 +1,51 @@
-/*titre*/
-
-h{
-  color: black;
-  font-size: 56px;
-  font-family: Public Sans;
-  font-weight: 600;
-  line-height: 62px;
-  word-wrap: break-word;
-  position: relative;
-  left: 750px;
-  top: 100px;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Spiegel;
 }
 
-p{
-  color: #979797;
-  font-size: 20px;
-  font-family: Public Sans;
-  font-weight: 400;
-  line-height: 28px;
-  word-wrap: break-word ;
-  position: relative;
-  left: 450px;
-  top: 100px;
-}
-button{
-  color: #0D0D0D;
-  font-size: 16px;
-  font-family: Public Sans;
-  font-weight: 600;
-  width: 194px; 
-  height: 50px; 
-  left: 800px; 
-  top: 300px; 
-  position: absolute;
+.title{
+    font-family: Beaufort;
 }
 
-.photo{
-  width: 1114px; 
-  height: 521px;
-  left: 350px;
-  top: 380px;
-  position: absolute;
+
+.container {
+    display: flex;
 }
 
+.imageîle{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: max-content(250px, 2fr);
+    grid-gap: 50px;
+}
+
+.image-border {
+    border-color: #333333;
+    border-style: solid;
+    border-width: 4px;
+    width: 1114px;
+    height: 521px;
+    position: relative;
+    left: 145px;
+    padding: 1px ;
+}
+
+.main-title {
+    font-size: 48px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    text-shadow: 1px 1px 3px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #AAAAAA;
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
 

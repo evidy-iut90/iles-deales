@@ -155,28 +155,6 @@ body {
     z-index: 2;
 }
 
-.cart-resume {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cart {
-    width: 650px;
-}
-
-.cart-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #e4e3e3;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #000000;
-}
 
 .img-details {
     display: flex;
@@ -200,109 +178,6 @@ body {
     flex-wrap: wrap;
 }
 
-.maps {
-    margin-top: 5px;
-}
-
-.cart-item p {
-    margin: 0;
-    font-size: 18px;
-}
-
-.supprimer-button {
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    background-color: #6662ad;
-    cursor: pointer;
-}
-
-.cart-summary {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 15px;
-    margin-left: 25px;
-    width: 35%;
-    height: 500px;
-}
-
-.coupon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.coupon input[type="text"] {
-    flex: 1;
-    width: 90%;
-    height: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
-    background-color: white;
-    font-size: 16px;
-    border: solid black 2px;
-}
-
-.sous-total {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.frais-agence {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.frais {
-    color: rgb(136, 134, 134);
-    opacity: 0.8;
-}
-
-.total {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.caisse {
-    width: 100%;
-    height: 50px;
-    color: white;
-    background-color: #323131;
-    border-radius: 2px;
-}
-
-.caisse:hover {
-    background-color: white;
-    color: #323131;
-    cursor: pointer;
-}
-
-.order-information  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 80px;
-    margin-bottom: 90px;
-    margin-left: 25px;
-    width: 45%;
-}
 
 .info-hr {
     width: 100%;
@@ -405,40 +280,6 @@ body {
         padding: 0px;
         margin: 0px;
     }
-    .cart {
-        width: 100%;
-    }
-    .cart-resume {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cart-item {
-        flex-direction: column;
-        align-items: center;
-    }
-    .img-details {
-        flex-direction: column;
-        align-items: center;
-    }
-    .img-produit {
-        width: 100%;
-        height: 100%;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-    .text-item {
-        align-self: first baseline;
-        margin-bottom: 20px;
-    }
-    .cart-summary {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-    .order-information {
-        width: 80%;
-        margin-left: 0px;
-    }
     .footer {
         flex-direction: column;
         justify-content: center;
@@ -478,3 +319,11 @@ div.carousel-fade {
     box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
     background-color: black;
   }
+
+  .acheter {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #323131;
+    border-radius: 2px;
+}

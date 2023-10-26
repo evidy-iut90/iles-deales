@@ -3,60 +3,96 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100px;
     top: 0px;
     left: 0px;
     background-color: #323131;
     z-index: 3;
-  }
+}
 
-/*navbar*/
+.logo-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
 .logo {
-    position: absolute;
     width: 130px;
     height: 70px;
-    top: 7.5px;
-    left: 20px;
     border-radius: 10%;
-  }
-  
-  .topnav {
-    position: absolute;
-    top: 40px;
-    right: 0;
+    margin-right: 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    padding: 10px;
+}
+
+.search input[type="text"] {
+    flex: 1;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.search button {
+    height: 100%;
+    margin-left: 10px;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6662ad;
+    cursor: pointer;
+}
+
+.img-loupe {
+    width: 20px;
+    height: 20px;
+}
+
+.topnav {
     background-color: #323131;
     overflow: hidden;
-  }
+}
   
-  .topnav a {
+.topnav a {
     color: white;
     text-align: center;
     padding: 17px;
     text-decoration: none;
     font-size: 18px;
     transition: 0.5s ease;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #323131;
     color: rgb(139, 138, 138);
-  }
+}
   
-  .topnav a.active {
+.topnav a.active {
     background-color: #323131;
     color: rgb(136, 134, 134);
     text-decoration: underline;
-  }
+}
   
-  .topnav .icon {
+.topnav .icon {
     position: fixed;
     display: none;
     top: 5px;
     right: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .topnav a {
         display: none;
     }
@@ -66,9 +102,26 @@
         display: block;
         right: 10px;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+    .logo {
+        width: 85px;
+        height: 40px;
+        border-radius: 10%;
+        margin-right: 5px;
+    }
+    .search {
+        position: relative;
+        bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+    }
+    .search button {
+        margin-left: 0px;
+        margin-top: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .topnav.responsive {
         position: fixed;
         top: 20px;
@@ -85,7 +138,7 @@
         float: none;
         text-align: center;
     }
-  }
+}
   
   /*footer*/
 .footer {

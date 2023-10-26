@@ -111,7 +111,6 @@ Changent de ligne à colone pour le responsive */
     padding: 2%;
 }
 
-/* Flex box contenant chacune une colone de lien utile */
 .footer-col {
     display: flex;
     flex-direction: column;
@@ -173,7 +172,7 @@ Changent de ligne à colone pour le responsive */
 }
 .footer-col .footer-email-submit :hover {
     background-color: rgb(32, 31, 31);
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .footer-col .footer-email-submit:hover {

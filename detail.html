@@ -1,99 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="img/Icon_page.png" rel="icon">
-  <title>Details</title>
-  <link href="detail.css" rel="stylesheet">
-  <script src="nav.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/Icon_page.png" rel="icon">
+    <link href="detail.css" rel="stylesheet">
+    <title>Détails</title>
 </head>
-
-<body class="body police">
-  <header class="header">
-    <div class="logo-search">
-      <div class="logo">
-        <img class="logo" src="img/Logo.png" alt="logo">
-      </div>
-      <div class="search">
-        <input type="text" placeholder="Rechercher" name="search">
-        <button type="submit"><img class="img-loupe" src="img/loupe.png" alt="Image Loupe"></button>
-      </div>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html">Accueil</a>
-      <a href="shop.html">Îles</a>
-      <a href="#Details" class="active">Détails</a>
-      <a href="cart.html">Panier</a>
-      <a href="log_in.html">Login</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="img/Icon.png" alt="icon">
-      </a>
-    </div>
-  </header>
-  <br>
-  <br>
-  <div class="img-ile">
-    <img src="img/Hummingbird_Cay.jpg" alt="Image" height="500" width="500">
-  </div>
-  
-  
-  <div class="details_acheter">
-    <br>
-    <br>
-    <h1>Hummingbird Cay </h1>
-    <h2>2 000 000€</h2>
-    <button class="acheter">Ajouter au panier</button>
-  </div>
-   
-    
-   <br>
-   <br>
-   <footer class="footer">
-     <div class="footer-devider">
-         <div class="footer-row">
-             <div class="footer-col">
-                 <div class="footer-newsletter title">Inscrivez-vous à notre newsletter</div>
-                 <div class="footer-text">
-                     Soyez les premiers à découvrir nos nouvelles offres, nos nouveaux produits, et nos évenements
-                 </div>
-                 <form action="#">
-                     <fieldset>
-                         <input type="text" id="email" name="email" placeholder="Votre email">
-                         <a href="#" class="footer-email-submit">S'inscrire</a>
-                     </fieldset>
-                 </form>
-             </div>
-         </div>
-         <div class="footer-row">
-             <div class="footer-col">
-                 <p class="footer-title title">Shop</p>
-                 <a href="#" class="footer-element">Mixte</a>
-                 <a href="#" class="footer-element">Femme</a>
-                 <a href="#" class="footer-element">czacf</a>
-                 <a href="#" class="footer-element">Enfant</a>
-             </div>
-             <div class="footer-col">
-                 <p class="footer-title title">Aide</p>
-                 <a href="#" class="footer-element">Centre d'aide</a>
-                 <a href="#" class="footer-element">czc</a>
-                 <a href="#" class="footer-element">Ticket</a>
-                 <a href="#" class="footer-element">nkfc</a>
-             </div>
-             <div class="footer-col">
-                 <p class="footer-title title">A propos</p>
-                 <a href="#" class="footer-element">A propos de nous</a>
-                 <a href="#" class="footer-element">Jfv</a>
-                 <a href="#" class="footer-element">J'ff pas</a>
-                 <a href="#" class="footer-element">D</a>
-             </div>
-         </div>
-     </div>
-     <div class="footer-c">
-         <p>&copy; Îles-déales 2023</p>
-     </div>
-   </footer>
- </body>
- 
- </html>
+<body>
+    <div class="header">
+        <div class="logo-search">
+            <div class="logo">
+                <img class="logo" src="img/Logo.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher" name="search">
+                <button type="submit"><img class="img-loupe" src="img/loupe.png" alt="Image Loupe"></button>
+            </div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Îles</a>
+            <a href="#Details" class="active">Détails</a>
+            <a href="cart.html">Panier</a>
+            <a href="#login">Se connecter</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="img/Icon.png" width="60px" height="auto" alt="icon">
+            </a>
+        </div>
+    </div>    
+    <div class="main" style="max-width: 900px;">
+        <div class="image-produit">
+            <img class="img-prod" src="img/Hummingbird_Cay.jpg" alt="Image Hummingbird Cay">
+        </div>
+        <div class="texte-droite">
+            <h2>Hummingbird Cay, Exuma Cays, Bahamas</h2>
+            <h3>33 057 885€</h3>
+            <p>Superficie: 95,9104 hectares</p>
+            <p>Plongez dans un écosystème riche et diversifié, où la faune et la flore tropicales cohabitent en harmonie. Explorez des sentiers naturels, observez des espèces endémiques et découvrez la beauté de la nature préservée.</p>
+            <p>Profitez de kilomètres de plages privées, parfaites pour les bains de soleil, les sports nautiques excitants ou les romantiques promenades nocturnes. Laissez-vous bercer par le doux bruit des vagues caressant le rivage.</p>
+            <div class="compteur">
+                <button class="button"  onclick="decrement()">-</button>
+                <p id="counter">0</p>
+                <button class="button" onclick="increment()">+</button>
+            </div>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d45888.07569543272!2d-75.93962545032201!3d23.456741998661784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDI3JzI4LjkiTiA3NcKwNTYnMzEuMSJX!5e0!3m2!1sfr!2sfr!4v1697905504709!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="btn-2">
+                <button class="acheter">Ajouter au panier - 33 057 885€</button>
+                <button class="acheter">Acheter immédiatement</button>
+            </div>
+        </div>
+   </div>
+   <div class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <h2>Newsletter</h2>
+            <form action="/action_page.php">
+                <div class="container">
+                    <h2>Inscrivez-vous à notre NewsLetter</h2>
+                </div>
+                <div class="container-mail">
+                    <input class="input-newsletter" type="text" placeholder="Votre adresse E-mail" name="mail" required>
+                    <input class="button-newsletter" type="submit" value="S'inscrire">
+                </div>
+            </form>
+       </div>
+       <div class="footer-text">
+            <div class="footer-col">
+                <a href="#" class="footer-title">Aide</a>
+                <a href="#" class="footer-element">Centre d'aide</a>
+                <a href="#" class="footer-element">status des commandes</a>
+                <a href="#" class="footer-element">contactez-nous</a>
+            </div>
+            <div class="footer-col">
+                <a href="#" class="footer-title">A propos</a>
+                <a href="#" class="footer-element">A propos de nous</a>
+                <a href="#" class="footer-element">Responsabilité</a>
+                <a href="#" class="footer-element">Technologie</a>
+                <a href="#" class="footer-element">Découvrez notre histoire</a>
+            </div>
+        </div>
+        </div>
+            <p>&copy; Îles-déales</p>
+        </div>
+        <script src="nav.js"></script>
+        <script src="compteur.js"></script>
+   </body>
+</html>

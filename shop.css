@@ -18,7 +18,7 @@ a[href] {
 }
 
 a[href]:hover {
-  color: #0F0F0F; 
+  color: rgb(23, 46, 46); 
 }
 
 .container{border: 1px}
@@ -47,7 +47,7 @@ a[href]:hover {
   .justify-content-space-evenly{justify-content: space-evenly;}
 
   .load {border: 1px solid black; padding-inline: 100px;}
-  .align-right {text-align: right;}
+  .align-right {margin-left: 70%;}
   .image-width{width: 300px; height:200px;}
 }
 
@@ -70,25 +70,23 @@ a[href]:hover {
   .justify-content-space-evenly{justify-content: space-evenly;}
 
   .load {border: 1px solid black; padding-inline: 100px;}
-  .align-right {text-align: right;}
+  .align-right {margin-left: 70%;}
   .image-width{width: 100%}
 }
 
 @media (max-width: 768px) {
   .body {
     margin: 0% 0% 0% 0%;
-    orientation: portrait;
-  }
+    orientation: portrait;}
 
-  main {
-    margin: 80px 0% 0% 0%;
-  }
-
+  main {margin: 80px 0% 0% 0%;}
+  
   .flex-row{flex-direction: column;}
   .flex-column{flex-direction: row;}
 
   .load {border: 1px solid black; margin-inline: 40%;}
   .center {justify-content: center;}
-  .align {text-align: center;}
+  .center-bot {margin-inline: 30%;}
+  .align-right {margin-inline: 30%;}
   .image-width {width: 100%}
 }

@@ -1,7 +1,7 @@
 # Îles-deales
 
 ## Barre de navigation
-Faite par Enzo et Sugdenaz.
+Faite par Sugdenaz et Enzo.
 
 ## Page d'accueil
 
@@ -34,4 +34,4 @@ Faite par Harry BOISSELOT.
 [Connection](https://evidy-iut90.github.io/iles-deales/login.html)
 
 ## Pied de page
-Faite par Enzo et Sugdenaz.
+Faite par Sugdenaz et Enzo.

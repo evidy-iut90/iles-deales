@@ -48,7 +48,7 @@ a[href]:hover {
 
   .load {border: 1px solid black; padding-inline: 100px;}
   .align-right {margin-left: 70%;}
-  .image-width{width: 300px; height:200px;}
+  .image-width {width: 300px; height:200px;}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -71,7 +71,7 @@ a[href]:hover {
 
   .load {border: 1px solid black; padding-inline: 100px;}
   .align-right {margin-left: 70%;}
-  .image-width{width: 100%}
+  .image-width {width: 100%}
 }
 
 @media (max-width: 768px) {

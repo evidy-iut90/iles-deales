@@ -18,27 +18,6 @@ body {
     z-index: 3;
 }
 
-main {
-    color: #00000F;
-  }
-  
-  a[href] {
-    color: black;
-    text-decoration: none;
-  }
-  
-  a[href]:hover {
-    color: #0F0F0F; 
-  }
-  
-  .container{border: 1px}
-  .container-flex{display: flex;}
-  .item {margin: 2px; border: 1px; padding: 3px;}
-  .button-color {border: 1px solid black; padding: 10px; border-radius: 20px;}
-  .button-rect {border: 1px solid black; padding: 10px;}
-  .check {border: 1px; padding: 10px;}
-  
-
 .logo-search {
     display: flex;
     flex-direction: row;
@@ -97,7 +76,7 @@ main {
     text-align: center;
     padding: 17px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.5s ease;
 }
   
@@ -169,40 +148,75 @@ main {
 
 .main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 110px;
-    padding: 20px;
+    margin-bottom: 50px;
     z-index: 2;
 }
 
-
-.img-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.img-produit { 
-    width: 300px;
-    height: 240px;
-    margin-right: 20px;
-    border-radius: 20px;
+.img-prod {
+    width: 650px;
+    height: auto;
+    border-radius: 25px;
     box-shadow: 4px 3px 4px #419af8;
-}  
-
-.text-item {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    flex-wrap: wrap;
 }
 
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+}
+span {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.texte-droite {
+    margin-left: 50px;
+}
+
+.maps {
+    width: 375px; 
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
 
 .info-hr {
     width: 100%;
     border-top: 1px solid black;
+}
+
+.compteur {
+    display: flex;
+    flex-direction: row;
+}
+
+.compteur {
+    border : 1px solid black;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.btn-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button  {
+    border: 0;
+    background-color: none;
+    cursor: pointer;
+}
+
+.acheter {
+    width: 45%;
+    font-size: 14px;
+    background-color: none;
 }
 
 .prime-hr {
@@ -232,11 +246,16 @@ main {
     justify-content: center;
 }
 
+.footer-text {
+    display: flex;
+    flex-direction: row;
+}
+
 .footer-col {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 55px;
+    margin-right: 55px;
 }
   
 .footer-element {
@@ -289,8 +308,8 @@ main {
 
 @media screen and (max-width: 1024px) {
     body {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 110px;
     }
     .responsive-margin {
@@ -307,6 +326,13 @@ main {
         margin-top: 100px;
         padding: 0;
     }
+    .img-prod {
+        width: 100%;
+        height: auto;
+    }
+    .maps {
+        width: 100%;
+    }
     .footer-row {
         flex-direction: column;
         justify-content: center;
@@ -315,36 +341,7 @@ main {
         margin-top: 20px;
         margin-bottom: 50px;
     }
-}
-
-  
-  .place-button {
-    position: relative;
-    top: 5px;
-    height: 100px;
-    width: 100%;
-  }
-  
-  .btn {
-    width: 100%;
-    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
-    background-color: black;
-  }
-
-  .acheter {
-    width: 150%;
-    height: 75px;
-    color: white;
-    background-color: #323131;
-    border-radius: 2px;
-}
-
-.img-ile {
-    border-width: 23px;
-    float: left;
-}
-
-.details_acheter {
-    border-width: 250px;
-    float: right;
+    .main {
+        flex-direction: column;
+    }
 }

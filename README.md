@@ -15,7 +15,7 @@ Faite par Harry BOISSELOT.
 <br>
 [Îles](https://evidy-iut90.github.io/iles-deales/shop.html)
 
-## Page du panier
+## Page du panier(cart)
 
 Faite par Enzo VIDY.
 <br>

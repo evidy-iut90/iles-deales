@@ -27,11 +27,11 @@ Faite par Enzo VIDY.
 <br>
 [Détails](https://evidy-iut90.github.io/iles-deales/detail.html)
 
-## Page de connection
+## Page de connexion
 
 Faite par Harry BOISSELOT.
 <br>
-[Connection](https://evidy-iut90.github.io/iles-deales/login.html)
+[Connexion](https://evidy-iut90.github.io/iles-deales/login.html)
 
 ## Pied de page
 Faite par Sugdenaz et Enzo.

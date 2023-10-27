@@ -1,13 +1,32 @@
-# iles-deales
+# Îles-deales
 
-## Page de Sugdenaz EKICI
-[Îles-déales](https://evidy-iut90.github.io/iles-deales/)
+## Barre de navigation
+Faite par Enzo et Sugdenaz.
 
-## Page de Harry BOISSELOT
+## Page d'accueil
+
+Faite par Sugdenaz EKICI.
+[Accueil](https://evidy-iut90.github.io/iles-deales/)
+
+## Page des produits
+
+Faite par Harry BOISSELOT.
 [Îles](https://evidy-iut90.github.io/iles-deales/shop.html)
 
-## Page de Enzo VIDY
-[Cart](https://evidy-iut90.github.io/iles-deales/cart.html)
+## Page du panier
 
-## Page de Thomas URBAIN (faite par Enzo)
-[Détail](https://evidy-iut90.github.io/iles-deales/detail.html)
+Faite par Enzo VIDY.
+[Panier](https://evidy-iut90.github.io/iles-deales/cart.html)
+
+## Page des détails 
+
+Faite par Enzo)
+[Détails](https://evidy-iut90.github.io/iles-deales/detail.html)
+
+## Page de connection
+
+Faite par Harry BOISSELOT.
+[Connection](https://evidy-iut90.github.io/iles-deales/login.html)
+
+## Pied de page
+Faite par Enzo et Sugdenaz.

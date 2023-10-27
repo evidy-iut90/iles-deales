@@ -151,10 +151,11 @@ img{
     }
 }
   
+ 
   /*footer*/
 .footer {
     background-color: #000000;
-    padding: 2%;
+    padding: 2px;
     clear: both;
     margin-top: 10%;
 }
@@ -197,7 +198,7 @@ Changent de ligne à colone pour le responsive */
 
 /* Style des liens dans les liens utile */
 .footer-element {
-    color:#AAAAAA;
+    color:#fff1f1;
     margin-top: 10%;
     margin-bottom: 10%;
     text-decoration: none;
@@ -216,7 +217,7 @@ Changent de ligne à colone pour le responsive */
 
 /* Style de l'input text de la newsletter */
 .footer-col input[type=text] {
-    width: 398px;
+    width: 300px;
     height: 40px;
     flex-shrink: 0; ;
     margin-bottom: 15px;
@@ -227,7 +228,7 @@ Changent de ligne à colone pour le responsive */
 
 /* Style du "bouton" S'inscrire */
 .footer-col .footer-email-submit {
-    width: 70%;
+    width: 70px;;
     height: 30px;
     color: white;
     background-color: #000000;

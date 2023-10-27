@@ -166,8 +166,6 @@ img{
     justify-content: center;
 }
 
-/* Flex box qui contiennent respectivment la newsletter et les liens utiles
-Changent de ligne à colone pour le responsive */
 .footer-row {
     display: flex;
     flex-direction: row;
@@ -184,19 +182,16 @@ Changent de ligne à colone pour le responsive */
     text-align: center;
 }
 
-/* Style du titre de la newsletter */
 .footer-newsletter {
     font-size: 24px;
     color: #FFFFFF;
 }
 
-/* Style du texte de la newsletter */
 .footer-text {
     color: #AAAAAA;
     font-size: 14px;
 }
 
-/* Style des liens dans les liens utile */
 .footer-element {
     color:#fff1f1;
     margin-top: 10%;
@@ -204,7 +199,6 @@ Changent de ligne à colone pour le responsive */
     text-decoration: none;
 }
 
-/* Flex box contenant l'email pour la newsletter */
 .footer-col fieldset {
     align-items: center;
     border: none;
@@ -215,7 +209,6 @@ Changent de ligne à colone pour le responsive */
     padding: 3%;
 }
 
-/* Style de l'input text de la newsletter */
 .footer-col input[type=text] {
     width: 300px;
     height: 40px;
@@ -226,7 +219,6 @@ Changent de ligne à colone pour le responsive */
     border-radius: 3px;
 }
 
-/* Style du "bouton" S'inscrire */
 .footer-col .footer-email-submit {
     width: 70px;;
     height: 30px;
@@ -249,7 +241,6 @@ Changent de ligne à colone pour le responsive */
     transition: all linear 0.2s;
 }
 
-/* Style des titres des colones de liens utiles */
 .footer-title {
     color: #FFFFFF;
     font-weight: bold;

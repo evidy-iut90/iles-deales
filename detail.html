@@ -1,78 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/Icon_page.png" rel="icon">
-    <link href="detail.css" rel="stylesheet">
-    <script src="nav.js"></script>
-    <title>Détails</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="img/Icon_page.png" rel="icon">
+  <title>Details</title>
+  <link href="detail.css" rel="stylesheet">
+  <script src="nav.js"></script>
 </head>
-<body>
-    <div class="header">
-        <div class="logo-search">
-            <div class="logo">
-                <img class="logo" src="img/Logo.png" alt="logo">
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Rechercher" name="search">
-                <button type="submit"><img class="img-loupe" src="img/loupe.png" alt="Image Loupe"></button>
-            </div>
-        </div>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html">Accueil</a>
-            <a href="shop.html">Îles</a>
-            <a href="#Details" class="active">Détails</a>
-            <a href="cart.html">Panier</a>
-            <a href="#login">Se connecter</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="img/Icon.png" width="60px" height="auto" alt="icon">
-            </a>
-        </div>
+
+<body class="body police">
+  <header class="header">
+    <div class="logo-search">
+      <div class="logo">
+        <img class="logo" src="img/Logo.png" alt="logo">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Rechercher" name="search">
+        <button type="submit"><img class="img-loupe" src="img/loupe.png" alt="Image Loupe"></button>
+      </div>
     </div>
-
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Îles</a>
+      <a href="#Details" class="active">Détails</a>
+      <a href="cart.html">Panier</a>
+      <a href="log_in.html">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="img/Icon.png" alt="icon">
+      </a>
+    </div>
+  </header>
+  <br>
+  <br>
+  <div class="img-ile">
+    <img src="img/Hummingbird_Cay.jpg" alt="Image" height="500" width="500">
+  </div>
+  
+  
+  <div class="details_acheter">
+    <br>
+    <br>
+    <h1>Hummingbird Cay </h1>
+    <h2>2 000 000€</h2>
+    <button class="acheter">Ajouter au panier</button>
+  </div>
+   
     
-    <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-        <div class="col order-md-last mb-5">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/Hummingbird_Cay.jpg" alt="Image">
-                <div class="d-none d-md-block place-button">
-                </div>                  
-              </div>
-              <div class="carousel-item">
-                <img src="img/Hummingbird_Cay.jpg" alt="Image">
-                <div class="d-none d-md-block place-button">
-                </div>                  
-              </div>
-              <div class="carousel-item ">
-                <img src="img/Hummingbird_Cay.jpg" alt="Image">
-                <div class="d-none d-md-block place-button">
-                </div>                  
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-
-
-        <h2>Hummingbird Cay </h2>
-        <h3>2 000 000€</h3>
-        <button class="acheter">Ajouter au panier</button>
-   </div>
-    
-   </body>
-</html>
+   <br>
+   <br>
+   <footer class="footer">
+     <div class="footer-devider">
+         <div class="footer-row">
+             <div class="footer-col">
+                 <div class="footer-newsletter title">Inscrivez-vous à notre newsletter</div>
+                 <div class="footer-text">
+                     Soyez les premiers à découvrir nos nouvelles offres, nos nouveaux produits, et nos évenements
+                 </div>
+                 <form action="#">
+                     <fieldset>
+                         <input type="text" id="email" name="email" placeholder="Votre email">
+                         <a href="#" class="footer-email-submit">S'inscrire</a>
+                     </fieldset>
+                 </form>
+             </div>
+         </div>
+         <div class="footer-row">
+             <div class="footer-col">
+                 <p class="footer-title title">Shop</p>
+                 <a href="#" class="footer-element">Mixte</a>
+                 <a href="#" class="footer-element">Femme</a>
+                 <a href="#" class="footer-element">czacf</a>
+                 <a href="#" class="footer-element">Enfant</a>
+             </div>
+             <div class="footer-col">
+                 <p class="footer-title title">Aide</p>
+                 <a href="#" class="footer-element">Centre d'aide</a>
+                 <a href="#" class="footer-element">czc</a>
+                 <a href="#" class="footer-element">Ticket</a>
+                 <a href="#" class="footer-element">nkfc</a>
+             </div>
+             <div class="footer-col">
+                 <p class="footer-title title">A propos</p>
+                 <a href="#" class="footer-element">A propos de nous</a>
+                 <a href="#" class="footer-element">Jfv</a>
+                 <a href="#" class="footer-element">J'ff pas</a>
+                 <a href="#" class="footer-element">D</a>
+             </div>
+         </div>
+     </div>
+     <div class="footer-c">
+         <p>&copy; Îles-déales 2023</p>
+     </div>
+   </footer>
+ </body>
+ 
+ </html>
